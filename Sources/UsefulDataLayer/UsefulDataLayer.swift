@@ -2,6 +2,8 @@ import UIKit
 import iOSCoreUsefulSDK
 import CoreData
 
+public typealias UsefulDataObject = NSManagedObject
+
 /**
  Handles all jobs of the Core Data communication.
  */
@@ -251,7 +253,7 @@ public protocol EntitySaveable: class {
     /// All attributes desired to save into database object.
     var attributes: [String:Any] { get }
     /// You should construct class when that initializer is called.
-    init?(managedObject: NSManagedObject)
+    init?(managedObject: UsefulDataObject)
 }
 
 public extension Notification.Name {
