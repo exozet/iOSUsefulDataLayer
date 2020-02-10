@@ -1,5 +1,5 @@
 import UIKit
-import iOSCoreUsefulSDK
+import CoreUsefulSDK
 import CoreData
 
 public typealias UsefulDataObject = NSManagedObject
